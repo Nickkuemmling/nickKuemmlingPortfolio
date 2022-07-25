@@ -1,0 +1,84 @@
+//TYPOGRAPHY
+
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+
+$headerFont: 'Playfair Display', serif;
+/*700 Bold Italic */
+$subFont: 'Playfair Display', serif;
+$paragraph: 'Source Sans Pro', sans-serif;
+$icons: 'Playfair Display', serif;
+$background:  #e6e6e6;
+$headingColor:  #4a97e4;
+$paragraphColor: #2a2a2a;
+$subHeadingColor: #0d0d0d;
+$accentColor: #d9376e;
+$altparagraph: 'Source Sans Pro', sans-serif;
+    /* 600 Semibold, 400 Regular */
+
+
+body {
+    background-color: $background;
+    font-size: 125%;
+}
+
+
+h3, h4 {
+	font-family: $subFont;
+	color: $headingColor;
+	font-size: 3rem;
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+li p, li a, li, button, input, textarea {
+	font-family: $icons;
+}
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-family: $paragraph;
+	color: $paragraphColor;
+	font-weight: 500;
+}
+
+.menu a {
+	font-family: $subFont;
+	font-size: 3rem;
+}
+
+//ELEMENTS
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 80%;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}

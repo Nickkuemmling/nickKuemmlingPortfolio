@@ -1,0 +1,137 @@
+$secondBackground: $secondBackground;
+// $headingColor:  #ff8e3c;
+$headingColor:  #4a97e4;
+$accentColor: #d9376e;
+
+    i:hover {
+        animation: rotateflip 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        // color: $accentColor;
+
+    }
+
+    @-webkit-keyframes rotateflip {
+        0% {
+        -webkit-transform: rotateX(0);
+                transform: rotateX(0);
+        }
+        100% {
+        -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
+        }
+    }
+
+    @keyframes rotateflip {
+        0% {
+        -webkit-transform: rotateX(0);
+                transform: rotateX(0);
+        }
+        100% {
+        -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
+        }
+    }
+
+    .projects, h3 {
+        text-align: center;
+        margin: 0;
+        padding: 40px 0;
+    }
+
+    .projectsBackground {
+        background-color: #f3f4f6;
+    }
+    
+    .eachProjectContainer {
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        margin: 40px;
+    }
+    
+    .eachProjectContainer2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        margin: 40px;
+    }
+    
+    .eachProjectContainer img,.eachProjectContainer2 img  {
+        display: flex;
+        width: 600px;
+        height: 400px;
+    }
+    
+    
+    
+    .eachProjectContainer button,.eachProjectContainer2 button {
+        margin: 0 10px 80px 0;
+    }
+    
+    .projectsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .projectTextContainer {
+        width: 35%;
+    }
+    
+    .projectTextContainer2 {
+        width: 35%;
+        text-align: end;
+    }
+    
+    .projectsLanguages,.projectsDescription{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 1.2rem;
+    }
+    
+    .projectsTitle {
+        font-size: 2.2rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    
+    .projectsLanguages {
+        font-style: italic;
+        color: $headingColor;
+        margin: 0;
+    
+    }
+    
+    .projectsContainer h2 {
+        text-align: center;
+        margin: 30px;
+    }
+    
+    hr {
+        color: #000;
+        height: 4px;
+        background-color: $headingColor;
+        border: none;
+        border-radius: 3px;
+    }
+    
+    .eachProjectContainer {
+        display: flex;
+        
+    }
+
+    .projectTextContainer a, .projectTextContainer2 a {
+        padding: 10px 35px;
+        background-color: $headingColor;
+        font-family: 'Source Sans Pro', sans-serif;
+        text-decoration: none;
+        color: white;
+        border-radius: 10px;
+        &:hover {
+            background-color: $accentColor;
+        }
+    }
+
+    .projectsDescription {
+        padding: 20px 0 30px 0;
+    }
+

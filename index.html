@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet"> 
+    <title>Nick's Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="navMenu">
+            <ul class="menu">
+                <li><p>Where to?</p></li>
+                <li><a href="#aboutMe" class="menuLinks">About Me</a></li>
+                <li><a href="#mySkills" class="menuLinks">Skills</a></li>
+                <li><a href="#projects" class="menuLinks">Projects</a></li>
+                <li><a href="#contact" class="menuLinks">Contact</a></li>
+            </ul>
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <header>
+
+        <div class="header">
+
+            <div class="inner-header flex">
+                <div class="wrapper">
+                    <div class="heading">
+                        <h1>nick kuemmling</h1>
+                        <h2>guelph based front-end developer</h2>
+                    </div>
+                </div>
+                <!-- <div class="downArrow"><i class="fa-solid fa-arrow-down"></i></div> -->
+            </div>
+        
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+        </header>
+
+<main>
+        <section class="aboutMe" id="aboutMe">
+            <div class="wrapper" >
+                <div class="profilePicture" data-aos="fade-right" data-aos-once="true" data-aos-offset="150"><img src="./assets/cat.jpg" alt="A picture of Nick"></div>
+                <div class="aboutMeWording" data-aos="fade-left" data-aos-once="true" data-aos-offset="150">
+                    <h3>about me <i class="fa-solid fa-cat"></i></h3>
+                    <p>I'm a web-developer with a passion for photography and design based out of Guelph, Ontario. Fueled mostly by coffee, I challenge myself everyday to master the tools and concepts of web-development. <br><br>
+                        
+                    I am passionate about creating impactful web applications using React, JavaScript, HTML and SASS. I find myself focused on minimalist clean designs that provide a playful and engaging user experience. </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="wrapper">
+            <secton class="mySkills" id="mySkills">
+                <h3>my skills <i class="fa-solid fa-coffee"></i></h3>
+    
+                <div class="skillIconContainer">
+                    <ul class="skillsIcon listLeft"  data-aos="fade-right" data-aos-once="true">
+                        <li>
+                            <i class="fa-brands fa-html5"></i>
+                            <p>HTML5</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <p>CSS</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-js-square"></i>
+                            <p>Javascript ES6</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-sass"></i>
+                            <p>SASS</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-network-wired"></i>
+                            <p>Rest APIs</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-react"></i>
+                            <p>React</p>
+                        </li>
+                    </ul>
+                    <ul class="skillsIcon" data-aos="fade-left" data-aos-once="true">
+                        <li>
+                            <i class="fa-solid fa-database"></i>
+                            <p>Firebase</p>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-github-square"></i>
+                            <p>GitHub</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <p>Responsive Design</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-terminal"></i>
+                            <p>Terminal</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-universal-access"></i>
+                            <p>Accessibility</p>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-j"></i>
+                            <p>jQuery</p>
+                        </li>
+                    </ul>
+                </div>
+    
+            </secton>
+        </div>
+
+        
+        <section id="projects" class="projectsBackground">
+            
+            <div class="wrapper">
+                <h3></i> my projects <i class="fa-solid fa-folder-open"></i></h3>
+
+                        <div class="projectsContainer">
+                            <div class="eachProjectContainer" data-aos="fade-right" data-aos-once="true">
+                                <img src="./assets/laptopDelicious2.jpg" alt="">
+                                <div class="projectTextContainer">
+                                    <p class="projectsTitle">DELICIOUS</p>
+                                    <p class="projectsLanguages">HTML, SCSS, JAVASCRIPT</p>
+                                    <p class="projectsDescription">A restaurant layout built to be user friendly, assessable, and adaptable to many screen sizes. Includes home, blog, and contact pages.</p>
+                                    <a href="https://nickkuemmling.github.io/nickKuemmlingProjectOne/webpages/index.html">view live</a>
+                                    <a href="https://github.com/Nickkuemmling/nickKuemmlingProjectOne.git">view code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr data-aos="fade-right" data-aos-once="true">
+                        <div class="projectsContainer">
+                            <div class="eachProjectContainer2" data-aos="fade-left" data-aos-once="true">
+                                <img src="./assets/laptopOhWow2.jpg" alt="">
+                                <div class="projectTextContainer2">
+                                    <p class="projectsTitle">Oh Wow...</p>
+                                    <p class="projectsLanguages">HTML, SCSS, JAVASCRIPT</p>
+                                    <p class="projectsDescription">An application which produces audio and video of every time Owen Wilson says wow in a movie by using 2 APIs. Includes a save list and IMBD statictics.</p>
+                                    <a href="https://calm-eclair-5dc4c7.netlify.app/?fbclid=IwAR2vT1Yx0qQje-mCVUHy6vwTZddtn00tij0MrgLCQlm29vQyVQuNMCu30pI">view live</a>
+                                    <a href="https://github.com/wowAppProject2/ohwow.git">view code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr data-aos="fade-left" data-aos-once="true">
+                        <div class="projectsContainer">
+                            <div class="eachProjectContainer" data-aos="fade-right" data-aos-once="true">
+                                <img src="./assets/quickWeather2.jpg" alt="">
+                                <div class="projectTextContainer">
+                                    <p class="projectsTitle">Quick Weather</p>
+                                    <p class="projectsLanguages">REACT, CSS</p>
+                                    <p class="projectsDescription">Using the OpenWeather API this App is able to sort by city to produce simplified weather statistics.</p>
+                                    <a href="https://glittering-jalebi-cff71e.netlify.app/">view live</a>
+                                    <a href="https://github.com/Nickkuemmling/nick-kuemmling-project-three.git">view code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr data-aos="fade-right" data-aos-once="true">
+                        <div class="projectsContainer">
+                            <div class="eachProjectContainer2" data-aos="fade-left" data-aos-once="true">
+                                <img src="./assets/walkytalky2.jpg" alt="">
+                                <div class="projectTextContainer2">
+                                    <p class="projectsTitle">Walky Talky</p>
+                                    <p class="projectsLanguages">REACT, CSS</p>
+                                    <p class="projectsDescription">A podcast planning app which populates a saveable list based on a users time input, genre, and interests. Podcats can be played form the list and be removed when finished.</p>
+                                    <a href="https://walkytalky.netlify.app/">view live</a>
+                                    <a href="https://github.com/talkie-walkie/walky-talky.git">view code</a>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
+        </section>
+    </main>
+
+    <section class="forms" id="contact">
+
+        <div class="wrapper">
+            <h3>get in contact <i class="fa-solid fa-envelope"></i></h3>
+
+            <div class="contactFlex">
+                <div class="contactTextContainer" data-aos="fade-right" data-aos-once="true">
+                    <p>You made it to the end! I hope you liked the tour. <br><br> Please feel free to reach out to my email or send me a message here directly. Looking forward to speaking with you soon!</p>
+                    <p><span><strong>nickkuemmlingdev@gmail.com</strong></span></p>
+                    <ul class="socialIcons">
+                    <li>
+                        <a href="https://www.instagram.com/nick.kuemmling/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/feed/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Nickkuemmling" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+
+                <div class="formContainer" data-aos="fade-left" data-aos-once="true"> 
+                    <form action="where the submit sends" method="POST" >
+                        <label for="userName"></label>
+                        <input type="text" name="name" id="userName" placeholder="name" required>
+
+                        <label for="userEmail"></label>
+                        <input type="email" name="email" id="userEmail" placeholder="email address" required>
+
+                        <label for="userMessage"></label>
+                        <textarea name="userMessage" id="userMessage" cols="30" rows="6" placeholder="message" required></textarea>
+                        <button aria-label="submit" type="submit" class="button">send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Designed and developed by ☕ and Nick Kuemmling</p>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/741551e637.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+    </script>
+</body>
+</html>
