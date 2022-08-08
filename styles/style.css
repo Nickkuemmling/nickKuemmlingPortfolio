@@ -483,7 +483,8 @@ p {
   padding: 0;
 }
 
-.flex { /*Flexbox for containers*/
+.flex {
+  /*Flexbox for containers*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +501,8 @@ p {
   position: relative;
   width: 100%;
   height: 15vh;
-  margin-bottom: -7px; /*Fix for safari gap*/
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
   min-height: 300px;
   max-height: 450px;
 }
@@ -567,22 +569,9 @@ p {
             transform: translate3d(85px, 0, 0);
   }
 }
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-  }
-  .content {
-    height: 30vh;
-  }
-  h1 {
-    font-size: 24px;
-  }
-}
 .aboutMe {
   background-color: white;
-  padding: 140px 0;
+  padding-top: 30px;
 }
 .aboutMe .wrapper {
   display: -webkit-box;
@@ -592,20 +581,34 @@ p {
 }
 .aboutMe p {
   font-size: 1.3rem;
-  max-width: 70ch;
+  max-width: 50%;
 }
 .aboutMe .aboutMeWording {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .aboutMe .aboutMeWording h3 {
   position: relative;
   padding: 10px;
 }
 .aboutMe .aboutMeWording h3 i:hover {
-  -webkit-animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-          animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: rotateflip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: rotateflip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 @-webkit-keyframes rotateflip {
   0% {
@@ -639,6 +642,7 @@ p {
           align-items: center;
 }
 .aboutMe .profilePicture img {
+  scale: 0.6;
   border-radius: 20px;
 }
 
@@ -646,8 +650,8 @@ p {
   padding: 20px 0 30px 0;
 }
 .forms i:hover {
-  -webkit-animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-          animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: rotateflip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: rotateflip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
   color: #d9376e;
 }
 @-webkit-keyframes rotateflip {
@@ -822,8 +826,8 @@ button {
 }
 
 i:hover {
-  -webkit-animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-          animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: rotateflip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: rotateflip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 @-webkit-keyframes rotateflip {
@@ -959,6 +963,9 @@ hr {
   text-decoration: none;
   color: white;
   border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
 }
 .projectTextContainer a:hover, .projectTextContainer2 a:hover {
   background-color: #d9376e;
@@ -982,8 +989,8 @@ hr {
   text-align: center;
 }
 .mySkills h3 .fa-galactic-republic:hover {
-  -webkit-animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-          animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: rotateflip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: rotateflip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 .mySkills .skillIconContainer {
   display: -webkit-box;
@@ -1007,8 +1014,8 @@ hr {
 }
 .mySkills .skillsIcon i:hover {
   color: #4a97e4;
-  -webkit-animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-          animation: rotateflip 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: rotateflip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: rotateflip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 .mySkills .skillsIcon li {
   display: -webkit-box;
@@ -1056,173 +1063,196 @@ hr {
     transform: rotateX(-360deg);
   }
 }
-@media (max-width: 996px) {
+@media screen and (max-width: 880px) {
+  .heading h1 {
+    font-size: 4.5rem;
+  }
+  .heading h2 {
+    font-size: 1.5rem;
+  }
   .navMenu .hamburger {
-    right: 10px;
+    right: 1000px;
   }
-  header {
-    height: 70vh;
+}
+@media screen and (max-width: 880px) and (max-width: 440px) {
+  .heading h1 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
   }
-  header h1, header h2 {
-    font-size: 4rem;
+  .heading h2 {
+    font-size: 1rem;
   }
-  header .heading i {
-    font-size: 2rem;
-  }
-  header .downArrow {
-    font-size: 2rem;
-    left: 48%;
-  }
-  .aboutMe {
-    padding: 50px 0;
-  }
+}
+@media screen and (max-width: 900px) {
   .aboutMe .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .aboutMe .aboutMeWording {
-    margin: 0;
-  }
-  .aboutMe .aboutMeWording h3 {
-    font-size: 2.5rem;
     text-align: center;
   }
-  .aboutMe .aboutMeWording p {
-    font-size: 1rem;
+  .aboutMe .profilePicture img {
+    scale: 0.8;
   }
-  .aboutMe .profilePicture {
-    margin: 0;
+  .aboutMe p {
+    max-width: 70ch;
   }
-  .mySkills h3 {
-    font-size: 2rem;
-  }
-  .mySkills .skillsIcon {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .mySkills .skillsIcon li {
-    margin: 5px;
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-  }
-  .mySkills .skillsIcon li p {
-    font-size: 1rem;
+}
+@media screen and (max-width: 900px) {
+  .aboutMe .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
-  .mySkills .skillsIcon li i {
-    font-size: 3rem;
+  .aboutMe img {
+    scale: 0.9;
   }
-  .myProjects {
-    padding: 50px 0;
+}
+@media screen and (max-width: 600px) {
+  .listLeft {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .myProjects h3 {
-    font-size: 2.1rem;
+  .listRight {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 1354px) {
+  .projectsContainer a {
+    margin-top: 10px;
     text-align: center;
   }
-  .myProjects .projectContainer:nth-child(2n) {
+  .projectsContainer .projectTextContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .projectsContainer .projectTextContainer2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+@media screen and (max-width: 1354px) and (max-width: 1180px) {
+  .projectsContainer .eachProjectContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .projectsContainer .eachProjectContainer2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .projectsContainer img {
+    height: 100%;
+  }
+  .projectsContainer .projectTextContainer {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projectsContainer .projectTextContainer2 {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1354px) and (max-width: 600px) {
+  .projectsContainer img {
+    scale: 0.85;
+  }
+}
+@media screen and (max-width: 1354px) and (max-width: 515px) {
+  .projectsContainer img {
+    scale: 0.75;
+  }
+}
+@media screen and (max-width: 1354px) and (max-width: 458px) {
+  .projectsContainer img {
+    scale: 0.65;
+  }
+  .projectsContainer .eachProjectContainer {
+    gap: 10px;
+  }
+  .projectsContainer .eachProjectContainer2 {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 1354px) and (max-width: 404px) {
+  .projectsContainer img {
+    scale: 0.55;
+  }
+}
+@media screen and (max-width: 1354px) and (max-width: 600px) {
+  div.contactFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .myProjects .projectContainer:nth-child(2n+1) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .myProjects .projectText {
+  div.contactFlex .formContainer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
-  .myProjects .projectText .skills {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .myProjects .projectText .skills li {
-    margin-top: 10px;
-  }
-  .myProjects .projectText p {
-    font-size: 1rem;
-  }
-  .myProjects .projectText li p, .myProjects .projectText li a, .myProjects .projectText li, .myProjects .projectText button, .myProjects .projectText input, .myProjects .projectText textarea,
-.myProjects .projectText footer p {
-    font-size: 1rem;
-  }
-  .myProjects .projectImage {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .forms .wrapper {
-    padding: 30px 0;
-  }
-  .forms h3 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  .forms .contactFlex {
+  div.contactFlex .formContainer form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .forms .contactFlex .contactTextContainer {
-    width: 100%;
+  div.contactFlex .formContainer form button {
+    -ms-flex-item-align: center;
+        align-self: center;
+    width: 40%;
+    margin-top: 5px;
   }
-  .forms .contactFlex .contactTextContainer p {
-    font-size: 1rem;
-  }
-  .forms .contactFlex .contactTextContainer p:nth-child(2) {
+  div.contactFlex .contactTextContainer {
     text-align: center;
-  }
-  .forms .contactFlex .contactTextContainer .socialIcons {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .forms .contactFlex .contactTextContainer .socialIcons i {
-    font-size: 2.2rem;
-  }
-  .forms .contactFlex .formContainer {
     width: 100%;
   }
-  .forms .contactFlex .formContainer button {
-    margin-top: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .navMenu .hamburger {
-    right: 5px;
-  }
-  header {
-    height: 64vh;
-  }
-  header h1, header h2 {
-    font-size: 2.5rem;
-  }
-  header .heading i {
-    font-size: 1.5rem;
-  }
-  .mySkills .skillsIcon li i {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 480px) {
-  .navMenu .hamburger {
-    right: 3px;
-  }
-  header {
-    height: 64vh;
-  }
-  header h1, header h2 {
-    font-size: 2rem;
-  }
-  header .heading i {
-    font-size: 0.5rem;
-  }
-  .mySkills .skillsIcon li i {
-    font-size: 2rem;
+  div.contactFlex .socialIcons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

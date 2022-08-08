@@ -2,7 +2,7 @@ $secondBackground: white;
 
 .aboutMe {
     background-color: $secondBackground;
-    padding: 140px 0;
+    padding-top: 30px;
 
     .wrapper {
         display: flex;
@@ -11,19 +11,24 @@ $secondBackground: white;
 
     p {
         font-size: 1.3rem;
-        max-width: 70ch;
+        max-width: 50%;
     }
 
     .aboutMeWording {
         flex-basis: 50%;
         margin: 20px;
-        
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        justify-content: center;
+        align-items: center;
+
         h3 {
             position: relative;
             padding: 10px;
 
             i:hover {
-                animation: rotateflip 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+                animation: rotateflip 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 
             }
         }
@@ -31,39 +36,39 @@ $secondBackground: white;
 
         @-webkit-keyframes rotateflip {
             0% {
-            -webkit-transform: rotateX(0);
-                    transform: rotateX(0);
+                -webkit-transform: rotateX(0);
+                transform: rotateX(0);
             }
+
             100% {
-            -webkit-transform: rotateX(-360deg);
-                    transform: rotateX(-360deg);
+                -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
             }
         }
-    
+
         @keyframes rotateflip {
             0% {
-            -webkit-transform: rotateX(0);
-                    transform: rotateX(0);
+                -webkit-transform: rotateX(0);
+                transform: rotateX(0);
             }
+
             100% {
-            -webkit-transform: rotateX(-360deg);
-                    transform: rotateX(-360deg);
+                -webkit-transform: rotateX(-360deg);
+                transform: rotateX(-360deg);
             }
         }
     }
 
-    .profilePicture{
+    .profilePicture {
         flex-basis: 50%;
         margin-left: 20px;
         display: flex;
         align-items: center;
 
         img {
-            
+            scale: 0.6;
             border-radius: 20px;
 
         }
     }
 }
-
-

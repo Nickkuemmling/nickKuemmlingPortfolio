@@ -4,7 +4,7 @@ $headingColor:  #4a97e4;
 $accentColor: #d9376e;
 
     i:hover {
-        animation: rotateflip 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        animation: rotateflip 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
         // color: $accentColor;
 
     }
@@ -126,6 +126,9 @@ $accentColor: #d9376e;
         text-decoration: none;
         color: white;
         border-radius: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: center;
         &:hover {
             background-color: $accentColor;
         }
