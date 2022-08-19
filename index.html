@@ -17,28 +17,31 @@
 
 <body>
 
-    <nav>
-        <div class="navMenu">
-            <ul class="menu">
-                <li>
-                    <p>Where to?</p>
-                </li>
-                <li><a href="#aboutMe" class="menuLinks">About Me</a></li>
-                <li><a href="#mySkills" class="menuLinks">Skills</a></li>
-                <li><a href="#projects" class="menuLinks">Projects</a></li>
-                <li><a href="#contact" class="menuLinks">Contact</a></li>
-            </ul>
-            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
-        </div>
-    </nav>
 
     <header>
 
         <div class="header">
 
+            <nav>
+                <div class="navMenu">
+                    <ul class="menu">
+                        <!-- <li>
+                            <p>Where to?</p>
+                        </li> -->
+                        <li><a href="#aboutMe" class="menuLinks">About Me</a></li>
+                        <li><a href="#mySkills" class="menuLinks">Skills</a></li>
+                        <li><a href="#projects" class="menuLinks">Projects</a></li>
+                        <li><a href="#contact" class="menuLinks">Contact</a></li>
+                    </ul>
+                    <!-- <div class="hamburger"><i class="fa-solid fa-bars"></i></div> -->
+                </div>
+            </nav>
             <div class="inner-header flex">
-                <div class="wrapper">
-                    <div class="heading">
+                <div class="heading">
+                    <div id="stars"></div>
+                    <div id="stars2"></div>
+                    <div id="stars3"></div>
+                    <div id="title">
                         <h1>nick kuemmling</h1>
                         <h2>guelph based front-end developer</h2>
                     </div>
@@ -83,67 +86,65 @@
             </div>
         </section>
 
-        <div class="wrapper">
-            <secton class="mySkills" id="mySkills">
-                <h3>my skills <i class="fa-solid fa-coffee"></i></h3>
+        <secton class="mySkills" id="mySkills">
+            <h3>my skills <i class="fa-solid fa-coffee"></i></h3>
 
-                <div class="skillIconContainer">
-                    <ul class="skillsIcon listLeft" data-aos="fade-right" data-aos-once="true">
-                        <li>
-                            <i class="fa-brands fa-html5"></i>
-                            <p>HTML5</p>
-                        </li>
-                        <li>
-                            <i class="fa-brands fa-css3-alt"></i>
-                            <p>CSS</p>
-                        </li>
-                        <li>
-                            <i class="fa-brands fa-js-square"></i>
-                            <p>Javascript ES6</p>
-                        </li>
-                        <li>
-                            <i class="fa-brands fa-sass"></i>
-                            <p>SASS</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-network-wired"></i>
-                            <p>Rest APIs</p>
-                        </li>
-                        <li>
-                            <i class="fa-brands fa-react"></i>
-                            <p>React</p>
-                        </li>
-                    </ul>
-                    <ul class="skillsIcon listRight" data-aos="fade-left" data-aos-once="true">
-                        <li>
-                            <i class="fa-solid fa-database"></i>
-                            <p>Firebase</p>
-                        </li>
-                        <li>
-                            <i class="fa-brands fa-github-square"></i>
-                            <p>GitHub</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-mobile-screen"></i>
-                            <p>Responsive Design</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-terminal"></i>
-                            <p>Terminal</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-universal-access"></i>
-                            <p>Accessibility</p>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-j"></i>
-                            <p>jQuery</p>
-                        </li>
-                    </ul>
-                </div>
+            <div class="skillIconContainer">
+                <ul class="skillsIcon listLeft" data-aos="fade-right" data-aos-once="true">
+                    <li>
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-js-square"></i>
+                        <p>Javascript ES6</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-sass"></i>
+                        <p>SASS</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-network-wired"></i>
+                        <p>Rest APIs</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-react"></i>
+                        <p>React</p>
+                    </li>
+                </ul>
+                <ul class="skillsIcon listRight" data-aos="fade-left" data-aos-once="true">
+                    <li>
+                        <i class="fa-solid fa-database"></i>
+                        <p>Firebase</p>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-github-square"></i>
+                        <p>GitHub</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <p>Responsive Design</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-terminal"></i>
+                        <p>Terminal</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-universal-access"></i>
+                        <p>Accessibility</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-j"></i>
+                        <p>jQuery</p>
+                    </li>
+                </ul>
+            </div>
 
-            </secton>
-        </div>
+        </secton>
 
 
         <section id="projects" class="projectsBackground">
@@ -217,6 +218,9 @@
     </main>
 
     <section class="forms" id="contact">
+        <!-- <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div> -->
 
         <div class="wrapper">
             <h3>get in contact <i class="fa-solid fa-envelope"></i></h3>

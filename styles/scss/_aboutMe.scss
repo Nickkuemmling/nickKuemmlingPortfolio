@@ -1,4 +1,5 @@
 $secondBackground: white;
+$accentColor: #d9376e;
 
 .aboutMe {
     background-color: $secondBackground;
@@ -12,6 +13,10 @@ $secondBackground: white;
     p {
         font-size: 1.3rem;
         max-width: 50%;
+    }
+
+    i:hover {
+        color: #d9376e;
     }
 
     .aboutMeWording {
@@ -68,6 +73,7 @@ $secondBackground: white;
         img {
             scale: 0.6;
             border-radius: 20px;
+            box-shadow: rgba(42, 49, 255, 0.46) 5px 5px, rgba(27, 34, 225, 0.316) 10px 10px, rgba(56, 86, 235, 0.166) 15px 15px;
 
         }
     }
