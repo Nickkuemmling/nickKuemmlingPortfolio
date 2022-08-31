@@ -321,7 +321,7 @@ header {
   letter-spacing: 3px;
 }
 .navMenu li a:hover {
-  color: #d9376e;
+  color: #ee5789;
 }
 .navMenu li a::before {
   content: "";
@@ -792,7 +792,8 @@ body {
   font-size: 125%;
 }
 
-h3, h4 {
+h3,
+h4 {
   font-family: "Playfair Display", serif;
   color: #4a97e4;
   font-size: 3rem;
@@ -811,7 +812,12 @@ a {
   text-decoration: none;
 }
 
-li p, li a, li, button, input, textarea {
+li p,
+li a,
+li,
+button,
+input,
+textarea {
   font-family: "Playfair Display", serif;
 }
 
@@ -845,6 +851,11 @@ ul {
 
 button {
   cursor: pointer;
+}
+
+i:hover {
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
 }
 
 i:hover {
@@ -1009,12 +1020,12 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 50px 0;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 50px 0;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1035,17 +1046,21 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .mySkills .skillsIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   padding: 0;
 }
 .mySkills .skillsIcon i {
@@ -1106,6 +1121,7 @@ hr {
 @media screen and (max-width: 880px) {
   .heading h1 {
     font-size: 4.5rem;
+    margin-bottom: 17px;
   }
   .heading h2 {
     font-size: 1.5rem;
@@ -1136,6 +1152,7 @@ hr {
   }
   .aboutMe p {
     max-width: 70ch;
+    text-align: center;
   }
 }
 @media screen and (max-width: 900px) {
@@ -1150,16 +1167,33 @@ hr {
     scale: 0.9;
   }
 }
-@media screen and (max-width: 600px) {
-  .listLeft {
+@media screen and (max-width: 707px) {
+  .mySkills .skillIconContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .mySkills .skillIconContainer .skillsIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .listRight {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .mySkills .skillIconContainer .skillsIcon i {
+    font-size: 3.6rem;
+  }
+  .mySkills .skillIconContainer .skillsIcon p {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 1354px) {
@@ -1224,6 +1258,12 @@ hr {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+  .projectsContainer .codeButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 15px;
   }
 }
 @media screen and (max-width: 1354px) and (max-width: 600px) {
@@ -1294,5 +1334,23 @@ hr {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: none;
   }
 }

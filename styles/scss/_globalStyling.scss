@@ -11,22 +11,23 @@ $headerFont: 'Playfair Display', serif;
 $subFont: 'Playfair Display', serif;
 $paragraph: 'Source Sans Pro', sans-serif;
 $icons: 'Playfair Display', serif;
-$background:  #e6e6e6;
-$headingColor:  #4a97e4;
+$background: #e6e6e6;
+$headingColor: #4a97e4;
 $paragraphColor: #2a2a2a;
 $subHeadingColor: #0d0d0d;
 $accentColor: #d9376e;
 $altparagraph: 'Source Sans Pro', sans-serif;
-    /* 600 Semibold, 400 Regular */
+/* 600 Semibold, 400 Regular */
 
 
 body {
-    background-color: $background;
-    font-size: 125%;
+	background-color: $background;
+	font-size: 125%;
 }
 
 
-h3, h4 {
+h3,
+h4 {
 	font-family: $subFont;
 	color: $headingColor;
 	font-size: 3rem;
@@ -45,7 +46,12 @@ a {
 	text-decoration: none;
 }
 
-li p, li a, li, button, input, textarea {
+li p,
+li a,
+li,
+button,
+input,
+textarea {
 	font-family: $icons;
 }
 
@@ -64,21 +70,26 @@ p {
 //ELEMENTS
 
 img {
-    display: block;
-    width: 100%;
-    height: auto;
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .wrapper {
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 80%;
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 80%;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 button {
-    cursor: pointer;
+	cursor: pointer;
+}
+
+i:hover {
+	animation-iteration-count: 3;
+
 }

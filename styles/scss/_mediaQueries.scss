@@ -3,6 +3,7 @@
 
     .heading h1 {
         font-size: 4.5rem;
+        margin-bottom: 17px;
     }
 
     .heading h2 {
@@ -38,6 +39,7 @@
 
     .aboutMe p {
         max-width: 70ch;
+        text-align: center;
     }
 }
 
@@ -58,13 +60,25 @@
 // My Skills
 
 
-@media screen and (max-width:600px) {
-    .listLeft {
-        justify-content: center;
-    }
+@media screen and (max-width:707px) {
 
-    .listRight {
-        justify-content: center;
+    .mySkills .skillIconContainer {
+        display: flex;
+        flex-direction: row;
+
+        .skillsIcon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            i {
+                font-size: 3.6rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
     }
 }
 
@@ -116,6 +130,11 @@
             width: 100%;
             align-items: center;
             text-align: center;
+        }
+
+        .projectsContainer .codeButtons {
+            display: flex;
+            gap: 15px;
         }
     }
 
@@ -184,5 +203,17 @@
                 justify-content: center;
             }
         }
+    }
+}
+
+// NAV
+
+@media screen and (max-width:580px) {
+    header ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: none;
     }
 }
