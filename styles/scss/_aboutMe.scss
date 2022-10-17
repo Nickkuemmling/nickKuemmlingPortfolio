@@ -12,7 +12,8 @@ $accentColor: #d9376e;
 
     p {
         font-size: 1.3rem;
-        max-width: 50%;
+        max-width: 100%;
+        text-align: center;
     }
 
     i:hover {
@@ -71,9 +72,11 @@ $accentColor: #d9376e;
         align-items: center;
 
         img {
-            scale: 0.6;
+            height: 500px;
+            width: 350px;
+            scale: 0.75;
             border-radius: 20px;
-            box-shadow: rgba(42, 49, 255, 0.46) 5px 5px, rgba(27, 34, 225, 0.316) 10px 10px, rgba(56, 86, 235, 0.166) 15px 15px;
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 
         }
     }
